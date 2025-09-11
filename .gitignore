@@ -1,0 +1,14 @@
+# Build directory
+/build/
+
+
+
+# Compiled files
+*.o
+*.obj
+
+# Executables and binaries
+*.elf
+*.bin
+*.hex
+*.map
