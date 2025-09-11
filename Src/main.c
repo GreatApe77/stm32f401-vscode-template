@@ -1,11 +1,12 @@
 #include "stm32f4xx.h"
-
+#include "something.h"
 #define GPIOAEN (1U<<0)
 #define PIN5 (1U<<5)
 #define LED_PIN PIN5
 
 int main(void)
 {
+    int a = MAGIC_NUMBER;
     RCC->AHB1ENR |=GPIOAEN;
 
     GPIOA->MODER |=(1<<10);
