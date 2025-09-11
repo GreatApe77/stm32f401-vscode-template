@@ -21,11 +21,9 @@ set(linker_script_SRC ${linker_script_SRC}
 )
 
 # Sources
+file(GLOB SRC_FILES "${CMAKE_CURRENT_SOURCE_DIR}/Src/*.c")
 set(sources_SRCS ${sources_SRCS}
-    
-	${CMAKE_CURRENT_SOURCE_DIR}/Src/main.c
-	${CMAKE_CURRENT_SOURCE_DIR}/Src/syscall.c
-	${CMAKE_CURRENT_SOURCE_DIR}/Src/sysmem.c
+	${SRC_FILES}
 	${CMAKE_CURRENT_SOURCE_DIR}/Startup/startup_stm32f401retx.s
 )
 
@@ -67,3 +65,4 @@ set(compiler_OPTS ${compiler_OPTS})
 
 # Linker options
 set(linker_OPTS ${linker_OPTS})
+
