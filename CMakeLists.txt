@@ -11,7 +11,7 @@ include("cmake/gcc-arm-none-eabi.cmake")
 message("Build CMAKE_MODULE_PATH: " ${CMAKE_MODULE_PATH})
 
 # Core project settings
-project(projeto2)
+project(stm32f401-vscode-template)
 enable_language(C CXX ASM)
 message("Build type: " ${CMAKE_BUILD_TYPE})
 
