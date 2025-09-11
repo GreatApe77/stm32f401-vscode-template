@@ -9,8 +9,15 @@
              * such as include paths, browse paths, defines, etc.
              */
             "name": "STM32",
+             "includePath": [
+                "${default}",
+                "${workspaceFolder}/Inc",
+                "${env:STM32CUBEF4_PATH}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                "${env:STM32CUBEF4_PATH}/Drivers/CMSIS/Include"
+            ],
             "configurationProvider": "ms-vscode.cmake-tools",
             "intelliSenseMode": "${default}"
         }
     ]
+
 }
