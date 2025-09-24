@@ -15,6 +15,14 @@
                 "${env:STM32CUBEF4_PATH}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
                 "${env:STM32CUBEF4_PATH}/Drivers/CMSIS/Include"
             ],
+            "defines": [
+                "DEBUG",
+                "NUCLEO_F401RE",
+                "STM32",
+                "STM32F4",
+                "STM32F401RETx",
+                "STM32F401xE"
+            ],
             "configurationProvider": "ms-vscode.cmake-tools",
             "intelliSenseMode": "${default}"
         }
